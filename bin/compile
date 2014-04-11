@@ -11,7 +11,7 @@ ENV_DIR="$3"
 GHC_VER=7.6.3
 CABAL_VER=1.18.0.2
 PREBUILT=https://s3.amazonaws.com/heroku-ghc
-CLEAR_BUILDPACK_CACHE=0
+CLEAR_BUILDPACK_CACHE=1 # Force rebuild
 #############################################################################
 
 export_env_dir() {
